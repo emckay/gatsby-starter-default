@@ -6,11 +6,18 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+interface Props {
+  description?: string
+  lang?: string,
+  meta?: Array<{name: string, content: string}>,
+  keywords?: string[],
+  title?: string
+}
+
+const SEO: React.SFC<Props> = ({ description, lang = 'en', meta = [], keywords =[], title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -72,6 +79,7 @@ function SEO({ description, lang, meta, title }) {
   )
 }
 
+<<<<<<< HEAD:src/components/seo.js
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
@@ -85,4 +93,6 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
+=======
+>>>>>>> add gatsby-plugin-typescript and gatsby-plugin-typescript-checker; convert source files to ts:src/components/seo.tsx
 export default SEO
