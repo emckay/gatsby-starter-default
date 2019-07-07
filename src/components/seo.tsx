@@ -79,20 +79,10 @@ const SEO: React.SFC<Props> = ({ description, lang = 'en', meta = [], keywords =
   )
 }
 
-<<<<<<< HEAD:src/components/seo.js
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
 }
 
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-}
-
-=======
->>>>>>> add gatsby-plugin-typescript and gatsby-plugin-typescript-checker; convert source files to ts:src/components/seo.tsx
 export default SEO
