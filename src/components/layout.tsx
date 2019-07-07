@@ -5,13 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
-import Header from "./header"
-import "./layout.css"
+import Header from './header'
+import './layout.css'
 
-const Layout: React.SFC<{children?: React.ReactNode}> = ({ children }) => (
+const Layout: React.SFC<{ children?: React.ReactNode }> = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {

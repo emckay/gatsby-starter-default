@@ -1,5 +1,5 @@
-import { Link } from "gatsby"
-import React from "react"
+import { Link } from 'gatsby'
+import React from 'react'
 
 const Header: React.SFC<{ siteTitle: string }> = ({ siteTitle }) => (
   <header
