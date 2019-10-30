@@ -1,6 +1,5 @@
 import React from 'react'
 
-import './layout.css'
 import '../styles/main.scss'
 import Container from 'reactstrap/lib/Container'
 
